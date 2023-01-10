@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -26,7 +27,7 @@ public class Main {
 public static void task2(){
     System.out.println("Задача 2");
     int airTemperature = 10;
-    if (airTemperature <5)
+    if (airTemperature < 5)
     {
         System.out.println("На улице холодн, нужно надеть шапку.");
     } else {
@@ -64,4 +65,23 @@ public static void task2(){
         } else {
                     System.out.println("Если возраст человека больше " + humanAge + " лет, то ему нужно ходить на работу.");
                 }
-    }}}}
+    }}}
+    public static void task5() {
+        System.out.println("Задача 5");
+        int kidAge = 10;
+        boolean adultAccompanying = false;
+        boolean childNotAllowedRide = kidAge <=5;
+        boolean childCanRideWithAdult = (kidAge <5 && kidAge <=14) && adultAccompanying;
+        boolean childCanRide = kidAge > 14;
+        if (childNotAllowedRide) {
+            System.out.println("Если возраст ребенка равен " + kidAge + " лет, то ему нельзя кататься на аттракционе.");
+        } else {
+            if (childCanRide) {
+                System.out.println("Если возраст ребенка равен " + kidAge + " лет, то ему можно кататься на аттракционе без сопровождения.");
+            } else {
+            if (childCanRideWithAdult) {
+                System.out.println(" Если возраст ребенка равен " + kidAge + " лет, то можно кататься на аттракционе в сопровождении взрослого.");
+            } else {
+                System.out.println( "Если возраст ребенка равен " + kidAge + " лет, нельзя кататься без сопровождения взрослого.");
+            }
+        }}}}
