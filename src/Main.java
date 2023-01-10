@@ -73,7 +73,7 @@ public static void task2(){
         int kidAge = 10;
         boolean adultAccompanying = false;
         boolean childNotAllowedRide = kidAge <=5;
-        boolean childCanRideWithAdult = (kidAge <5 && kidAge <=14) && adultAccompanying;
+        boolean childCanRideWithAdult = (kidAge >5 && kidAge <=14) && adultAccompanying;
         boolean childCanRide = kidAge > 14;
         if (childNotAllowedRide) {
             System.out.println("Если возраст ребенка равен " + kidAge + " лет, то ему нельзя кататься на аттракционе.");
