@@ -52,10 +52,10 @@ public static void task2(){
     public static void task4() {
         System.out.println("Задача 4");
         int humanAge = 50;
-        boolean needToGoToKindergarten = humanAge >= 2 && humanAge <=6;
-        boolean needToGoToSchool = humanAge >=7 && humanAge <18;
-        boolean needToGoToUniversity = humanAge >=18 && humanAge <24;
-        boolean needToGoToWork = humanAge >=24;
+        boolean needToGoToKindergarten = humanAge >= 2 && humanAge <=6; //инициализация возраста ребенка для детского сада
+        boolean needToGoToSchool = humanAge >=7 && humanAge <18; //инициализация возраста ребенка для школы
+        boolean needToGoToUniversity = humanAge >=18 && humanAge <24; //инициализация возраста для университета
+        boolean needToGoToWork = humanAge >=24; //инициализация возраста человека для работы
         if (needToGoToKindergarten) {
             System.out.println("Если возраст человека равен " + humanAge + " лет, то ему нужно ходить в детский сад.");
         } else {
@@ -71,10 +71,10 @@ public static void task2(){
     public static void task5() {
         System.out.println("Задача 5");
         int kidAge = 10;
-        boolean adultAccompanying = false;
-        boolean childNotAllowedRide = kidAge <=5;
-        boolean childCanRideWithAdult = (kidAge >5 && kidAge <=14) && adultAccompanying;
-        boolean childCanRide = kidAge > 14;
+        boolean adultAccompanying = false; //инициализация признака наличия сопровождающего
+        boolean childNotAllowedRide = kidAge <=5; //инициализация возраста? когда нельзя кататься на аттракционах
+        boolean childCanRideWithAdult = (kidAge >5 && kidAge <=14) && adultAccompanying; //инициализация возраста, когда можно кататься с сопровождающим
+        boolean childCanRide = kidAge > 14; //инициализация возраста для катания без сопровождающего
         if (childNotAllowedRide) {
             System.out.println("Если возраст ребенка равен " + kidAge + " лет, то ему нельзя кататься на аттракционе.");
         } else {
@@ -89,10 +89,10 @@ public static void task2(){
         }}}
     public static void task6() {
         System.out.println("Задача 6");
-        int numberPassengers = 150;
-        boolean availableSeats = numberPassengers <=60;
-        boolean availableStandingPlaces = numberPassengers > 60 && numberPassengers <= 102;
-        boolean carFull = numberPassengers > 102;
+        int numberPassengers = 150; //инициализация количества пассажиров в вагоне
+        boolean availableSeats = numberPassengers <=60; //инициализация количества сидячих мест
+        boolean availableStandingPlaces = numberPassengers > 60 && numberPassengers <= 102; //инициализация количества стоячих мест
+        boolean carFull = numberPassengers > 102; //инициализация количества предельного количества пассажиров в вагоне
         if (availableSeats) {
             System.out.println("Есть сидячие места");
         } else {
@@ -104,11 +104,11 @@ public static void task2(){
         }}
     public static void task7() {
         System.out.println("Задача 7");
-        int one = 100;
-        int two = 150;
-        int three = 500;
-        boolean oneTheLargest = one > two && one > three;
-        boolean twoTheLargest = two > one && two > three;
+        int one = 100; //инициализация значения числа №1
+        int two = 150; //инициализация значения числа №2
+        int three = 500; //инициализация значения числа №3
+        boolean oneTheLargest = one > two && one > three; //инициализация признака когда число №1 наибольшее
+        boolean twoTheLargest = two > one && two > three; //инициализация признака когда число №2 наибольшее
         if (oneTheLargest) {
             System.out.println("Наибольшее число " + one);
         } else {
